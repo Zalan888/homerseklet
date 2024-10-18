@@ -44,6 +44,19 @@ namespace homerseklet
             return max;
         }
 
+        static int mintemp()
+        {
+            int min = temps[0];
+            foreach (int i in temps)
+            {
+                if (i < min)
+                {
+                    min = i;
+                }
+            }
+            return min;
+        }
+
         static void Main(string[] args)
         {
             input();
