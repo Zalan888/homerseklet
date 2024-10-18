@@ -60,6 +60,9 @@ namespace homerseklet
         static void Main(string[] args)
         {
             input();
+            Console.WriteLine("Átlag hőmérséklet"+avaragetemp());
+            Console.WriteLine("A legnagyobb hőmérséklet"+maxtemp());
+            Console.WriteLine("A legkisebb hőmérséklet"+mintemp());
         }
     }
 }
