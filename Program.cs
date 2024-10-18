@@ -31,6 +31,19 @@ namespace homerseklet
             return avarage;
         }
 
+        static int maxtemp()
+        {
+            int max = temps[0];
+            foreach (int i in temps)
+            {
+                if (i > max)
+                {
+                    max = i;
+                }
+            }
+            return max;
+        }
+
         static void Main(string[] args)
         {
             input();
