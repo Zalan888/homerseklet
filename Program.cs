@@ -19,8 +19,21 @@ namespace homerseklet
             }
         }
 
+        static int avaragetemp()
+        {
+            int avarage = 0;
+            foreach (int i in temps)
+            {
+                avarage += i;
+            }
+            avarage /= 7;
+
+            return avarage;
+        }
+
         static void Main(string[] args)
         {
+            input();
         }
     }
 }
