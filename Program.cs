@@ -57,12 +57,29 @@ namespace homerseklet
             return min;
         }
 
+        static bool isfreezing()
+        {
+            bool freezing = false;
+            foreach (int i in temps)
+            {
+                if (i < 0)
+                {
+                    freezing = true;
+                }
+            }
+            return freezing;
+        }
+
         static void Main(string[] args)
         {
             input();
             Console.WriteLine("Átlag hőmérséklet"+avaragetemp());
             Console.WriteLine("A legnagyobb hőmérséklet"+maxtemp());
             Console.WriteLine("A legkisebb hőmérséklet"+mintemp());
+            if (isfreezing())
+            {
+                Console.WriteLine("Fagypont alatti nap is volt");
+            }
         }
     }
 }
